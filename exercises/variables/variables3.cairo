@@ -1,9 +1,10 @@
 // variables3.cairo
 // Execute `starklings hint variables3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
+// I AM T DONE
 
 fn main() {
-    let x: felt;
+// assign the variable x a value and it works
+    let x: felt =3;
     debug::print_felt(x);
 }
