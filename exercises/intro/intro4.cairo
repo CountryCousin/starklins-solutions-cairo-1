@@ -1,4 +1,4 @@
-// I AM NOT DONE
+// I AM DONE
 // Remember add function from before? The `add` function below does the exact same
 // thing! If you skip out a `semicolon` at the end of the function, the function 
 // returns the result of that statement. Pretty neat, eh?
@@ -11,8 +11,14 @@ fn add(a: felt, b: felt) -> felt {
 }
 
 // Edit this function
-fn sub(a, b) {
-    a - b;
+// add `-> felt` to the funtion
+fn sub(a: felt, b: felt) -> felt {
+// remove the `;` here. 
+    a - b
+
+    // if we add `;` then we must return the variable
+    // let c = a - b;
+    // return c;
 }
 
 fn main() -> felt {
