@@ -11,6 +11,8 @@ fn add(a: felt, b: felt) -> felt {
 }
 
 // Edit this function
+
+//add the variable types `felt` to the fuction argumet
 // add `-> felt` to the funtion
 fn sub(a: felt, b: felt) -> felt {
 // remove the `;` here. 
