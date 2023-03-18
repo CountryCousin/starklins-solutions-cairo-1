@@ -68,7 +68,7 @@ trait PartialOrd<T> {
     fn gt(a: T, b: T) -> bool;
 }
 
-/// Trait for convertion between types.
+/// Trait for convertion between types. 
 trait Into<T, S> {
     fn into(self: T) -> S;
 }
