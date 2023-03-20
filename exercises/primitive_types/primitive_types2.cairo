@@ -39,6 +39,19 @@ fn main() {
     }
 }
 
+
+// fn is_alphabetic(ref char: felt) -> bool {: This line declares a function named 
+// `is_alphabetic` that takes a reference to a `felt` variable (which is assumed to be a character) and returns a boolean value.
+
+// if char >= 'a' {: This line checks if the ASCII value of the character is greater than or 
+// equal to the ASCII value of the lowercase letter 'a'.
+
+// if char <= 'z' {: This line checks if the ASCII value of the character is less than or 
+// equal to the ASCII value of the lowercase letter 'z'. If both conditions are true, the function returns true.
+
+// false: If the character is not alphabetic, the function returns false.
+
+
 fn is_alphabetic(ref char: felt) -> bool {
     if char >= 'a' {
         if char <= 'z' {
