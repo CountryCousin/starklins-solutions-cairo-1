@@ -11,6 +11,8 @@ fn main() {
 
     let mut my_first_initial = 'C';
     if is_alphabetic(
+    // The `ref` keyword is used to pass a reference to my_first_initial instead 
+    // of its value, which is more efficient when passing large data structures
         ref my_first_initial
     ) {
         debug::print_felt('Alphabetical!');
@@ -22,7 +24,7 @@ fn main() {
         debug::print_felt('Neither alphabetic nor numeric!');
     }
 //  add `mut your_character = 'f*009kla'`
-    let mut your_character = 'f*009kla'; // Finish this line like the example! What's your favorite short string?
+    let mut your_character = '*009kla'; // Finish this line like the example! What's your favorite short string?
     // Try a letter, try a number, try a special character, try a short string!
     if is_alphabetic(
         ref your_character
