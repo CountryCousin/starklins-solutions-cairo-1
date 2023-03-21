@@ -10,5 +10,5 @@ fn main() {
 
     // adding ` let` to the "number" variable below does not rename the variable rather it shadows the already defined "number" variable above
     let number = 3; // don't rename this variable
-    debug::print_felt(number);
+    debug::print_felt(number); 
 }
