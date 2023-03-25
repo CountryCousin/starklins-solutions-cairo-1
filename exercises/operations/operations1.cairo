@@ -11,7 +11,9 @@ use traits::Into;
 
 fn poly(x: usize, y: usize) -> usize {
     // FILL ME
-    let res = (x*x*x) + y-2_usize;
+    // since we are testing for usize, attatch `_usize` to the felt value: ie 2
+    // spread out `x^3` as `x*x*x` since there is no `^` in cairo
+    let res = x*x*x + y-2_usize;
     res // Do not change
 }
 
