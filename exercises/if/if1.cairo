@@ -30,3 +30,11 @@ mod tests {
         assert(42_usize == bigger(32_usize, 42_usize), '42 bigger than 32');
     }
 }
+
+// keyNotes
+// Like in Rust, functions have two ways of returning values. 
+// The first is by using the final expression of the function. 
+// In this case, the ; is omitted at the end of the line. 
+// The second is by using the return keyword. 
+// This can only be used to return a value earlier from within the function and can, 
+// for example, be used from inside if statements.
