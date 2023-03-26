@@ -5,7 +5,7 @@
 use traits::Into;
 
 fn main() {
-
+//    add `_u64` to the integer you wanna pass in
     call_me(2_u64);
 }
 
