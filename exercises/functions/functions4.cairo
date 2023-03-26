@@ -14,7 +14,7 @@ fn main() {
     let original_price = 51_u32;
     debug::print_felt(sale_price(original_price).into());
 }
-
+// just add `u32` as the return value
 fn sale_price(price: u32) -> u32 {
     if is_even(price) {
         price - 10_u32
