@@ -11,7 +11,9 @@ use traits::Into;
 #[derive(Copy)]
 enum Message {// TODO: define the different variants used below
 
+// the parenthesis can take arguments
   Quit:(()),
+//   recall strings with single quotes are considered felts
     Echo:(felt),
     Move:((u32, u32)),
     ChangeColor:((u8, u8, u8)),
