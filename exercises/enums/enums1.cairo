@@ -1,11 +1,16 @@
 // enums1.cairo
 // No hints this time! ;)
 
-// I AM NOT DONE
+// I AM  DONE
 
-use debug::print;
+use debug::print; 
 use debug::print_felt;
 enum Message { // TODO: define a few types of messages as used below
+
+Quit:(),
+Echo:(),
+Move:(),
+ChangeColor:() 
 }
 
 fn main() {
