@@ -7,7 +7,7 @@ Option types are very common in Cairo code, as they have a number of uses:
 - Return values for functions that are not defined over their entire input range (partial functions)
 - Return value for otherwise reporting simple errors, where None is returned on error
 - Optional struct fields
-- Optional function arguments
+- Optional function arguments 
 
 ## Further Information
 
