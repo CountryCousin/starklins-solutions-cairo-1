@@ -3,15 +3,17 @@
 // adding, changing or removing any of them.
 // Execute `starklings hint move_semantics5` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
+// I AM  DONE
 use array::ArrayTrait;
+
 #[test]
 fn main() {
     let mut a = ArrayTrait::new();
+     pass_by_ref(ref a);
+     pass_by_snapshot(@a);
     let mut b = pass_by_value(a);
-    pass_by_ref(ref a);
     pass_by_ref(ref b);
-    pass_by_snapshot(@a);
+    
 }
 
 fn pass_by_value(mut arr: Array<felt>) -> Array<felt> {
@@ -21,3 +23,8 @@ fn pass_by_value(mut arr: Array<felt>) -> Array<felt> {
 fn pass_by_ref(ref arr: Array<felt>) {}
 
 fn pass_by_snapshot(x: @Array<felt>) {}
+
+// Carefully reason about how each function takes ownership of the variable passed.
+// It depends on the keyword used to pass the variable.
+// What happens when a function takes ownership of a variable and then returns it?
+// Can we still use it later on?
