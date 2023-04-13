@@ -10,6 +10,6 @@ struct Rectangle {
 }
 ```
 
-## Further information
+## Further information 
 
 - [Structures](https://link.medium.com/MeQ1Agthrxb#ff54]
